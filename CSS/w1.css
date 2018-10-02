@@ -1,0 +1,47 @@
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+  background-color: pink;
+  position:relative;
+  box-sizing:border-box;
+  color:white;
+
+  line-height:1;
+  outline:1px solid #f00;
+}
+.container{ /*置中*/
+  width:1024px;
+  margin:0 auto;
+}
+.container h1{
+  width:380px;
+  margin:0 auto;
+  padding:16px 0;
+
+}
+.wrapper{
+  width:1024px;
+  margin:0 auto;
+}
+.containter p{
+  padding: 16px 0px;
+  line-height: 42px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.item{
+  width: 512px;
+}
+
+.btn{
+  width:1024px;
+  margin:0 auto;
+}
+.start-btn{
+  width:380px;
+  margin:0 auto;
+  padding:16px 0;
+}
