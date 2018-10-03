@@ -4,11 +4,17 @@
   list-style:none;
   background-color: pink;
   position:relative;
-  box-sizing:border-box;
+  box-sizing:border-ontbox;
   color:white;
+  font-family: arial;
+
 
   line-height:1;
   outline:1px solid #f00;
+}
+button{
+  border:0;
+  padding:0;
 }
 .container{ /*置中*/
   width:1024px;
@@ -18,7 +24,7 @@
   width:380px;
   margin:0 auto;
   padding:16px 0;
-
+  text-align:center;
 }
 .wrapper{
   width:1024px;
@@ -31,17 +37,40 @@
 .content{
   display: flex;
   justify-content: space-between;
+  padding-top: 24px;
 }
 .item{
   width: 512px;
 }
 
+.list{
+  display: flex;
+  justify-content: space-between;
+}
+.content h2{
+  margin-bottom: 12px;
+}
+.content img{
+  margin-right: 120px;
+}
+
+.item ul{
+  width: 256px;
+}
+.item ul li{
+  padding: 3px 0px;
+}
+
 .btn{
   width:1024px;
   margin:0 auto;
+  padding-top: 24px;
 }
 .start-btn{
-  width:380px;
+  width:200px;
+  text-align:center;
   margin:0 auto;
   padding:16px 0;
+  border: 3px solid;
+  border-radius: 9px;
 }
