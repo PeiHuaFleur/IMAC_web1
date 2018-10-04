@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/w1.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- 字體連結 -->
   <title></title>
 </head>
 
@@ -51,17 +52,30 @@
 
 
     <div class="basic-inform">
-      <option value="">name</option>
-      <option value="">class</option>
+      <ul>
+        <li>Name : <input id="name-written"> </input> </li>
+        <li>Class :
+          <select id="class-select">
+            <option value="">student</option>
+            <option value="college1">college 1et year</option>
+            <option value="college2">college 2ed year</option>
+            <option value="college3">college 3rd year</option>
+            <option value="master1">M1</option>
+            <option value="master2">M2</option>
+          </select>
+        </li>
+      </ul>
     </div>
 
 
-  </div>  <!-- wrapper -->
+  </div> <!-- wrapper -->
 
 
   <div class="btn">
     <div class="start-btn">
-      <button type="button" name="button">Start IMAC adventure</button>
+      <p>
+        <button type="button" name="button">Start IMAC adventure</button>
+      </p>
     </div>
   </div>
 

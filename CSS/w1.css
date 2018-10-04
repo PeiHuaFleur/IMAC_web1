@@ -2,15 +2,15 @@
   margin:0;
   padding:0;
   list-style:none;
-  background-color: pink;
+  background-color: #ed4f5b;
   position:relative;
-  box-sizing:border-ontbox;
+  box-sizing:border-box;
   color:white;
-  font-family: arial;
+  font-family: 'Roboto', sans-serif;
 
 
-  line-height:1;
-  outline:1px solid #f00;
+  /* line-height:1;
+  outline:1px solid #f00; */
 }
 button{
   border:0;
@@ -60,6 +60,27 @@ button{
 .item ul li{
   padding: 3px 0px;
 }
+
+.basic-inform ul li{
+  margin-bottom: 9px;
+
+}
+
+#name-written{
+  height:36px;
+  border:0px;
+  border-bottom: 1px solid white;
+  width:240px;
+}
+
+#class-select{
+  height:36px;
+  width:240px;
+  border:2px solid #ff9797;
+  background-color: #c64453;
+  /* display: none; */
+}
+
 
 .btn{
   width:1024px;
