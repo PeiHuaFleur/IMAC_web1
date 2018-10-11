@@ -49,18 +49,19 @@ button {
   justify-content: space-between;
 }
 
-.imgbox{
-  width: 100px;
-  height: 250px;
+.imgbox {
+  width: 80px;
+  height: 200px;
   overflow: hidden;
-  left:-40%;
+  left: -45%;
   /* border: 1px solid white; */
 }
-.imgbox .image{
+
+.imgbox .image {
   width: 100%;
   height: 100%;
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
 }
 
 .item {
@@ -71,12 +72,12 @@ button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
-
 }
-.grid-container{
+
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(2,72px);
-  grid-gap:4px;
+  grid-template-columns: repeat(2, 72px);
+  grid-gap: 4px;
 }
 
 .content h2 {
@@ -105,19 +106,30 @@ button {
   border: 0px;
   border-bottom: 1px solid white;
   width: 240px;
+  margin-left: 6px;
 }
 
 #class-select {
   height: 36px;
   width: 240px;
   border: 0.5px solid #999999;
+  background:url('../img/down-arrow.svg')no-repeat 96% center;
+  background-size: 30px 20px;
+  /* background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0; */
   background-color: #323232;
-  /* display: none; */
+  padding: 0px 12px;
+  margin-left: 8px;
+
+  -moz-appearance: none;/* Firefox 消除預設箭頭*/
+  -webkit-appearance: none;/* Safari and Chrome */
+  appearance: none
+
 }
+
 
 .footer {
   padding-top: 24px;
-  border-top:  0.5px solid #878787;
+  border-top: 0.5px solid #878787;
 }
 
 .start-btn {
@@ -133,5 +145,5 @@ button {
 
 .start-btn:hover {
   background-color: #323232;
-  color:  #878787;
+  color: #878787;
 }
