@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, user-scalable=no"​>
+  <!-- viewport 設定響應式視野 -->
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/w1.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- 字體連結 -->
@@ -10,65 +12,71 @@
 </head>
 
 <body>
+  <div id="popup-bgc"></div>
+  <div class="square">
+    <p>Félicitation!</p>
+    <img src="img/Bart_Simpson.png" alt="student">
+  </div>
+
   <div class="header">
     <div class="container">
       <h1>IMAC Character Creation</h1>
     </div>
   </div>
-
   <div class="wrapper">
     <div class="content">
       <div class="item">
         <h2>Default</h2>
-        <div class="list">
-          <h4> LV IMAC</h4>
-          <div class="imgbox">
-           <div class="image" style="background-image:url('img/bart.png');">
-           </div>
-         </div>
 
-        </div>
-
+        <h4> LV IMAC</h4>
+        <img id="img-stu" src="img/bart.png" alt="#">
+        <!-- <div class="imgbox">
+          <div class="image" style="background-image:url('img/bart.png');">
+          </div>
+        </div> -->
       </div>
 
       <div class="item">
+
         <h2>Status</h2>
-        <div class="list">
-          <ul class="grid-container">
-            <li>COM</li> <li>5</li>
-            <li>MOV</li> <li>5</li>
-            <li>INF</li> <li>5</li>
-            <li>ART</li> <li>5</li>
-            <li>WRT</li> <li>5</li>
-          </ul>
-          <ul class="grid-container">
-            <li>WEB</li> <li>5</li>
-            <li>DSN</li> <li>5</li>
-            <li>LNG</li> <li>5</li>
-            <li>MTH</li> <li>5</li>
-            <li>EFX</li> <li>5</li>
-          </ul>
+        <div class="stat">
+          <p class="p-grid">COM<span>5</span></p>
+          <p class="p-grid">WEB<span>5</span></p>
+          <p class="p-grid">MOV<span>5</span></p>
+          <p class="p-grid">DSN<span>5</span></p>
+          <p class="p-grid">INF<span>5</span></p>
+
+          <p class="p-grid">LNG<span>5</span></p>
+          <p class="p-grid">ART<span>5</span></p>
+          <p class="p-grid">MTH<span>5</span></p>
+          <p class="p-grid">WRT<span>5</span></p>
+          <p class="p-grid">EFX<span>5</span></p>
 
         </div>
-
       </div>
+
+
     </div>
 
 
-    <div class="basic-inform">
-      <ul>
-        <li>Name : <input id="name-written"> </input> </li>
-        <li>Class :
-          <select id="class-select">
-            <option value="">student</option>
-            <option value="college1">college 1st year</option>
-            <option value="college2">college 2ed year</option>
-            <option value="college3">college 3rd year</option>
-            <option value="master1">M1</option>
-            <option value="master2">M2</option>
-          </select>
-        </li>
-      </ul>
+    <div class="content">
+      <div class="item">
+        <div class="line"></div>
+        <ul>
+          <li>Name : <input id="name-written"> </input> </li>
+          <li>Class :
+            <select id="class-select">
+              <option value="">student</option>
+              <option value="college1">college 1st year</option>
+              <option value="college2">college 2ed year</option>
+              <option value="college3">college 3rd year</option>
+              <option value="master1">M1</option>
+              <option value="master2">M2</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
 
