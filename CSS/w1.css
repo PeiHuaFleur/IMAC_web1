@@ -12,21 +12,27 @@
 }
 
 body, button,input{
-    background-color: black;
+  background-color: black;
 }
-
+body{
+  height: 100vh;
+}
 button {
   border: 0;
   padding: 0;
 }
-
-.square{
+#pop{
   position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#square{
   width:240px;
   height: 240px;
   background-color: #fff;
   border-radius:20%;
-  z-index: 2;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
@@ -37,16 +43,15 @@ button {
   opacity: 0.7;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
-.square img{
+#square img{
   position: absolute;
   left: 50%;
   top: 55%;
   transform: translate(-50%,-50%);
   width: 50%;
 }
-.square p{
+#square p{
   top:10%;
   text-align: center;
 }
@@ -107,17 +112,17 @@ button {
 }
 
 
-.stat{
+#stat{
   display: grid;
   /* grid-template-columns: repeat(2, 72px); */
   grid-template-columns: auto auto;
   padding:4px;
   grid-gap: 4px;
 }
-/* .stat span{
+/* #stat span{
   padding-left: 24px;
 } */
-.p-grid{
+#p-grid{
   display: grid;
   grid-template-columns: repeat(2, 72px);
 }
@@ -191,11 +196,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  body{
+    height: 100%;
+  }
   .content{
     display: flex;
     flex-direction: column;
   }
-  .stat{
+  #stat{
     grid-template-columns:auto auto auto;
   }
   .item{

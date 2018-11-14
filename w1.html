@@ -12,15 +12,18 @@
 </head>
 
 <body>
-  <div id="popup-bgc"></div>
-  <div class="square">
-    <p>Félicitation!</p>
-    <img src="img/Bart_Simpson.png" alt="student">
+  <div id="pop">
+    <div id="popup-bgc"></div>
+    <div id="square">
+      <p>Félicitation!</p>
+      <img src="img/Bart_Simpson.png" alt="student">
+    </div>
   </div>
+
 
   <div class="header">
     <div class="container">
-      <h1>IMAC Character Creation</h1>
+      <h1 id="site-title">IMAC Character Creation</h1>
     </div>
   </div>
   <div class="wrapper">
@@ -39,18 +42,18 @@
       <div class="item">
 
         <h2>Status</h2>
-        <div class="stat">
-          <p class="p-grid">COM<span>5</span></p>
-          <p class="p-grid">WEB<span>5</span></p>
-          <p class="p-grid">MOV<span>5</span></p>
-          <p class="p-grid">DSN<span>5</span></p>
-          <p class="p-grid">INF<span>5</span></p>
+        <div id="stat">
+          <p id="p-grid">COM<span>5</span></p>
+          <p id="p-grid">WEB<span>5</span></p>
+          <p id="p-grid">MOV<span>5</span></p>
+          <p id="p-grid">DSN<span>5</span></p>
+          <p id="p-grid">INF<span>5</span></p>
 
-          <p class="p-grid">LNG<span>5</span></p>
-          <p class="p-grid">ART<span>5</span></p>
-          <p class="p-grid">MTH<span>5</span></p>
-          <p class="p-grid">WRT<span>5</span></p>
-          <p class="p-grid">EFX<span>5</span></p>
+          <p id="p-grid">LNG<span>5</span></p>
+          <p id="p-grid">ART<span>5</span></p>
+          <p id="p-grid">MTH<span>5</span></p>
+          <p id="p-grid">WRT<span>5</span></p>
+          <p id="p-grid">EFX<span>5</span></p>
 
         </div>
       </div>
@@ -67,7 +70,7 @@
           <li>Class :
             <select id="class-select">
               <option value="">student</option>
-              <option value="college1">college 1st year</option>
+              <option vaxlue="college1">college 1st year</option>
               <option value="college2">college 2ed year</option>
               <option value="college3">college 3rd year</option>
               <option value="master1">M1</option>
@@ -87,6 +90,9 @@
       <button class="start-btn" type="button" name="button">Start IMAC Adventure</button>
     </div>
   </div>
+
+  <script src="main.js"></script>
+  <!-- link js file -->
 
 
 
