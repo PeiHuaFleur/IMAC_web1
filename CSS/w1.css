@@ -21,6 +21,9 @@ button {
   border: 0;
   padding: 0;
 }
+.hide{
+  display: none;
+}
 #pop{
   position: absolute;
   z-index: 1;
@@ -87,15 +90,19 @@ button {
   /* justify-content: space-between; */
   flex-direction: row;
 }
-
-#img-stu{
+.content img{
+  display: none;
+}
+#img-active{
+  display: block;
+}
+.img-stu{
   width: 20%;
   left: 45%;
   opacity: 0;
   transform: translate3d(-30px,0px,0px) scale3d(0.5,0.5,1);  /* 從小變大 變位置 */
   animation:ImgChange 4s ease-out forwards;
 }
-
 
 @keyframes ImgChange {
   100%{
@@ -179,7 +186,7 @@ button {
   border-top: 0.5px solid #878787;
 }
 
-.start-btn {
+#start-btn {
   text-align: center;
   margin: 0 auto;
   padding: 16px 32px;
@@ -190,7 +197,7 @@ button {
   transform: translateX(-50%);
 }
 
-.start-btn:hover {
+#start-btn:hover {
   background-color: #323232;
   color: #878787;
 }
