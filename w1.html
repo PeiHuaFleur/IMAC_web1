@@ -12,14 +12,13 @@
 </head>
 
 <body>
-  <div id="pop">
+  <div id="pop" class="hide">
     <div id="popup-bgc"></div>
     <div id="square">
-      <p>Félicitation!</p>
-      <img src="img/Bart_Simpson.png" alt="student">
+      <p><span id="addName"></span>, félicitation!</p>
+      <img id='popImg' src="img/Bart_Simpson.png" alt="student">
     </div>
   </div>
-
 
   <div class="header">
     <div class="container">
@@ -29,10 +28,13 @@
   <div class="wrapper">
     <div class="content">
       <div class="item">
-        <h2>Default</h2>
+        <h2 id=default-name>Default</h2>
 
         <h4> LV IMAC</h4>
-        <img id="img-stu" src="img/bart.png" alt="#">
+        <img class="img-stu" id="img-active"  src="img/bart.png" alt="#">
+        <img class="img-stu" src="img/hd-3d.png" alt="#">
+        <img class="img-stu" src="img/hd-cinema.png" alt="#">
+        <img class="img-stu" src="img/hd-web.png" alt="#">
         <!-- <div class="imgbox">
           <div class="image" style="background-image:url('img/bart.png');">
           </div>
@@ -66,15 +68,13 @@
       <div class="item">
         <div class="line"></div>
         <ul>
-          <li>Name : <input id="name-written"> </input> </li>
+          <li>Name : <input type="text" id="name-written"> </input> </li>
           <li>Class :
             <select id="class-select">
-              <option value="">student</option>
-              <option vaxlue="college1">college 1st year</option>
-              <option value="college2">college 2ed year</option>
-              <option value="college3">college 3rd year</option>
-              <option value="master1">M1</option>
-              <option value="master2">M2</option>
+              <option value="0">student</option>
+              <option value="1">3D</option>
+              <option value="2">Cinéma</option>
+              <option value="3">Web Design</option>
             </select>
           </li>
         </ul>
@@ -87,7 +87,7 @@
 
   <div class="footer">
     <div class="container">
-      <button class="start-btn" type="button" name="button">Start IMAC Adventure</button>
+      <button id="start-btn" type="button" name="button">Start IMAC Adventure</button>
     </div>
   </div>
 
